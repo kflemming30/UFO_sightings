@@ -1,0 +1,2540 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20231.23.0310.1044                               -->
+<workbook original-version='18.1' source-build='2023.1.0 (20231.23.0310.1044)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AccessibleZoneTabOrder.true...AccessibleZoneTabOrder />
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <MapboxVectorStylesAndLayers />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <WindowsPersistSimpleIdentifiers />
+    <WorksheetBackgroundTransparency />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='ufo_data_cleaned' inline='true' name='federated.0fxiix508btv8q18lqtu80wznmtz' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='ufo_data_cleaned' name='textscan.1n0a3fd167cmy018lz57y0gdhore'>
+            <connection class='textscan' directory='C:/Users/12039/Documents/UFO_sightings' filename='ufo_data_cleaned.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.1n0a3fd167cmy018lz57y0gdhore' name='ufo_data_cleaned.csv' table='[ufo_data_cleaned#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='datetime' name='datetime' ordinal='0' />
+            <column datatype='string' name='city' ordinal='1' />
+            <column datatype='string' name='state' ordinal='2' />
+            <column datatype='string' name='country' ordinal='3' />
+            <column datatype='string' name='shape' ordinal='4' />
+            <column datatype='real' name='duration (seconds)' ordinal='5' />
+            <column datatype='string' name='duration (hours/min)' ordinal='6' />
+            <column datatype='string' name='comments' ordinal='7' />
+            <column datatype='date' name='date posted' ordinal='8' />
+            <column datatype='real' name='latitude' ordinal='9' />
+            <column datatype='real' name='longitude ' ordinal='10' />
+            <column datatype='real' name='duration(minutes)' ordinal='11' />
+            <column datatype='integer' name='year' ordinal='12' />
+            <column datatype='string' name='STATE' ordinal='13' />
+            <column datatype='real' name='POPESTIMATE2014' ordinal='14' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.1n0a3fd167cmy018lz57y0gdhore' name='ufo_data_cleaned.csv' table='[ufo_data_cleaned#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='datetime' name='datetime' ordinal='0' />
+            <column datatype='string' name='city' ordinal='1' />
+            <column datatype='string' name='state' ordinal='2' />
+            <column datatype='string' name='country' ordinal='3' />
+            <column datatype='string' name='shape' ordinal='4' />
+            <column datatype='real' name='duration (seconds)' ordinal='5' />
+            <column datatype='string' name='duration (hours/min)' ordinal='6' />
+            <column datatype='string' name='comments' ordinal='7' />
+            <column datatype='date' name='date posted' ordinal='8' />
+            <column datatype='real' name='latitude' ordinal='9' />
+            <column datatype='real' name='longitude ' ordinal='10' />
+            <column datatype='real' name='duration(minutes)' ordinal='11' />
+            <column datatype='integer' name='year' ordinal='12' />
+            <column datatype='string' name='STATE' ordinal='13' />
+            <column datatype='real' name='POPESTIMATE2014' ordinal='14' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[ufo_data_cleaned.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>datetime</remote-name>
+            <remote-type>135</remote-type>
+            <local-name>[datetime]</local-name>
+            <parent-name>[ufo_data_cleaned.csv]</parent-name>
+            <remote-alias>datetime</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ufo_data_cleaned.csv_36750396B4C24993ABF1803AAB4A4EA4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>city</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[city]</local-name>
+            <parent-name>[ufo_data_cleaned.csv]</parent-name>
+            <remote-alias>city</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ufo_data_cleaned.csv_36750396B4C24993ABF1803AAB4A4EA4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>state</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[state]</local-name>
+            <parent-name>[ufo_data_cleaned.csv]</parent-name>
+            <remote-alias>state</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ufo_data_cleaned.csv_36750396B4C24993ABF1803AAB4A4EA4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>country</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[country]</local-name>
+            <parent-name>[ufo_data_cleaned.csv]</parent-name>
+            <remote-alias>country</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ufo_data_cleaned.csv_36750396B4C24993ABF1803AAB4A4EA4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>shape</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[shape]</local-name>
+            <parent-name>[ufo_data_cleaned.csv]</parent-name>
+            <remote-alias>shape</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ufo_data_cleaned.csv_36750396B4C24993ABF1803AAB4A4EA4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>duration (seconds)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[duration (seconds)]</local-name>
+            <parent-name>[ufo_data_cleaned.csv]</parent-name>
+            <remote-alias>duration (seconds)</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ufo_data_cleaned.csv_36750396B4C24993ABF1803AAB4A4EA4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>duration (hours/min)</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[duration (hours/min)]</local-name>
+            <parent-name>[ufo_data_cleaned.csv]</parent-name>
+            <remote-alias>duration (hours/min)</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ufo_data_cleaned.csv_36750396B4C24993ABF1803AAB4A4EA4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>comments</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[comments]</local-name>
+            <parent-name>[ufo_data_cleaned.csv]</parent-name>
+            <remote-alias>comments</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ufo_data_cleaned.csv_36750396B4C24993ABF1803AAB4A4EA4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>date posted</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[date posted]</local-name>
+            <parent-name>[ufo_data_cleaned.csv]</parent-name>
+            <remote-alias>date posted</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ufo_data_cleaned.csv_36750396B4C24993ABF1803AAB4A4EA4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>latitude</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[latitude]</local-name>
+            <parent-name>[ufo_data_cleaned.csv]</parent-name>
+            <remote-alias>latitude</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ufo_data_cleaned.csv_36750396B4C24993ABF1803AAB4A4EA4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>longitude </remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[longitude ]</local-name>
+            <parent-name>[ufo_data_cleaned.csv]</parent-name>
+            <remote-alias>longitude </remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ufo_data_cleaned.csv_36750396B4C24993ABF1803AAB4A4EA4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>duration(minutes)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[duration(minutes)]</local-name>
+            <parent-name>[ufo_data_cleaned.csv]</parent-name>
+            <remote-alias>duration(minutes)</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ufo_data_cleaned.csv_36750396B4C24993ABF1803AAB4A4EA4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>year</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[year]</local-name>
+            <parent-name>[ufo_data_cleaned.csv]</parent-name>
+            <remote-alias>year</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ufo_data_cleaned.csv_36750396B4C24993ABF1803AAB4A4EA4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>STATE</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[STATE]</local-name>
+            <parent-name>[ufo_data_cleaned.csv]</parent-name>
+            <remote-alias>STATE</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ufo_data_cleaned.csv_36750396B4C24993ABF1803AAB4A4EA4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>POPESTIMATE2014</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[POPESTIMATE2014]</local-name>
+            <parent-name>[ufo_data_cleaned.csv]</parent-name>
+            <remote-alias>POPESTIMATE2014</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ufo_data_cleaned.csv_36750396B4C24993ABF1803AAB4A4EA4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Sightings Per 10k' datatype='real' name='[Calculation_4005388951349424129]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='COUNTD([duration (seconds)]) / WINDOW_AVG(SUM([POPESTIMATE2014]))'>
+          <table-calc ordering-type='Rows' />
+        </calculation>
+      </column>
+      <column caption='Popestimate2014' datatype='real' name='[POPESTIMATE2014]' role='measure' type='quantitative' />
+      <column caption='State' datatype='string' name='[STATE]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+      <_.fcp.ObjectModelTableType.true...column caption='ufo_data_cleaned.csv' datatype='table' name='[__tableau_internal_object_id__].[ufo_data_cleaned.csv_36750396B4C24993ABF1803AAB4A4EA4]' role='measure' type='quantitative' />
+      <column caption='City' datatype='string' name='[city]' role='dimension' semantic-role='[City].[Name]' type='nominal' />
+      <column caption='Comments' datatype='string' name='[comments]' role='dimension' type='nominal' />
+      <column caption='Country' datatype='string' name='[country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+      <column caption='Date Posted' datatype='date' name='[date posted]' role='dimension' type='ordinal' />
+      <column caption='Datetime' datatype='datetime' name='[datetime]' role='dimension' type='ordinal' />
+      <column caption='Duration (Hours/Min)' datatype='string' name='[duration (hours/min)]' role='dimension' type='nominal' />
+      <column caption='Duration (Seconds)' datatype='real' name='[duration (seconds)]' role='measure' type='quantitative' />
+      <column caption='Duration(Minutes)' datatype='real' name='[duration(minutes)]' role='measure' type='quantitative' />
+      <column aggregation='Avg' caption='Latitude' datatype='real' name='[latitude]' role='measure' semantic-role='[Geographical].[Latitude]' type='quantitative' />
+      <column aggregation='Avg' caption='Longitude' datatype='real' name='[longitude ]' role='measure' semantic-role='[Geographical].[Longitude]' type='quantitative' />
+      <column caption='Shape' datatype='string' name='[shape]' role='dimension' type='nominal' />
+      <column caption='State1' datatype='string' name='[state]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+      <column caption='Year' datatype='integer' name='[year]' role='dimension' type='quantitative' />
+      <column-instance column='[STATE]' derivation='None' name='[none:STATE:nk]' pivot='key' type='nominal' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:STATE:nk]' palette='sf_color_safe' type='palette'>
+            <map to='#006699'>
+              <bucket>&quot;Washington&quot;</bucket>
+            </map>
+            <map to='#08916d'>
+              <bucket>&quot;New York&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Delaware&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Nebraska&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Virginia&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>%null%</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Maine&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Puerto Rico Commonwealth&quot;</bucket>
+            </map>
+            <map to='#529ee0'>
+              <bucket>&quot;California&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Arkansas&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Minnesota&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Tennessee&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Hawaii&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;New Mexico&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Wyoming&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;District of Columbia&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Nevada&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Mississippi&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Kentucky&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Oregon&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Alabama&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Maryland&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Rhode Island&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Iowa&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Ohio&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Colorado&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Missouri&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Utah&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Idaho&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Illinois&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;North Carolina&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Kansas&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Oklahoma&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Louisiana&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Pennsylvania&quot;</bucket>
+            </map>
+            <map to='#d9a6c2'>
+              <bucket>&quot;Florida&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;New Hampshire&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;West Virginia&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Connecticut&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Montana&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Vermont&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Alaska&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Massachusetts&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;South Carolina&quot;</bucket>
+            </map>
+            <map to='#f59b00'>
+              <bucket>&quot;Texas&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Indiana&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;North Dakota&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Georgia&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;New Jersey&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Wisconsin&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Arizona&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Michigan&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;South Dakota&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='ufo_data_cleaned.csv' id='ufo_data_cleaned.csv_36750396B4C24993ABF1803AAB4A4EA4'>
+            <properties context=''>
+              <relation connection='textscan.1n0a3fd167cmy018lz57y0gdhore' name='ufo_data_cleaned.csv' table='[ufo_data_cleaned#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='datetime' name='datetime' ordinal='0' />
+                  <column datatype='string' name='city' ordinal='1' />
+                  <column datatype='string' name='state' ordinal='2' />
+                  <column datatype='string' name='country' ordinal='3' />
+                  <column datatype='string' name='shape' ordinal='4' />
+                  <column datatype='real' name='duration (seconds)' ordinal='5' />
+                  <column datatype='string' name='duration (hours/min)' ordinal='6' />
+                  <column datatype='string' name='comments' ordinal='7' />
+                  <column datatype='date' name='date posted' ordinal='8' />
+                  <column datatype='real' name='latitude' ordinal='9' />
+                  <column datatype='real' name='longitude ' ordinal='10' />
+                  <column datatype='real' name='duration(minutes)' ordinal='11' />
+                  <column datatype='integer' name='year' ordinal='12' />
+                  <column datatype='string' name='STATE' ordinal='13' />
+                  <column datatype='real' name='POPESTIMATE2014' ordinal='14' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+    <datasource caption='state_totals' inline='true' name='federated.0dbw4j113kyovo10gdekj0im03bw' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='state_totals' name='textscan.1li71l10wrvzr612tnvx6065bp61'>
+            <connection class='textscan' directory='C:/Users/12039/Documents/UFO_sightings' filename='state_totals.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.1li71l10wrvzr612tnvx6065bp61' name='state_totals.csv' table='[state_totals#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='string' name='state' ordinal='0' />
+            <column datatype='integer' name='sightings_count' ordinal='1' />
+            <column datatype='string' name='state_long' ordinal='2' />
+            <column datatype='real' name='pop_2014' ordinal='3' />
+            <column datatype='real' name='sightings_per_10k' ordinal='4' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.1li71l10wrvzr612tnvx6065bp61' name='state_totals.csv' table='[state_totals#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='string' name='state' ordinal='0' />
+            <column datatype='integer' name='sightings_count' ordinal='1' />
+            <column datatype='string' name='state_long' ordinal='2' />
+            <column datatype='real' name='pop_2014' ordinal='3' />
+            <column datatype='real' name='sightings_per_10k' ordinal='4' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[state_totals.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>state</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[state]</local-name>
+            <parent-name>[state_totals.csv]</parent-name>
+            <remote-alias>state</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[state_totals.csv_CE9AB6AA718B47BC9F88FBF93223EAF9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>sightings_count</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[sightings_count]</local-name>
+            <parent-name>[state_totals.csv]</parent-name>
+            <remote-alias>sightings_count</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[state_totals.csv_CE9AB6AA718B47BC9F88FBF93223EAF9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>state_long</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[state_long]</local-name>
+            <parent-name>[state_totals.csv]</parent-name>
+            <remote-alias>state_long</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[state_totals.csv_CE9AB6AA718B47BC9F88FBF93223EAF9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>pop_2014</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[pop_2014]</local-name>
+            <parent-name>[state_totals.csv]</parent-name>
+            <remote-alias>pop_2014</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[state_totals.csv_CE9AB6AA718B47BC9F88FBF93223EAF9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>sightings_per_10k</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[sightings_per_10k]</local-name>
+            <parent-name>[state_totals.csv]</parent-name>
+            <remote-alias>sightings_per_10k</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[state_totals.csv_CE9AB6AA718B47BC9F88FBF93223EAF9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <_.fcp.ObjectModelTableType.true...column caption='state_totals.csv' datatype='table' name='[__tableau_internal_object_id__].[state_totals.csv_CE9AB6AA718B47BC9F88FBF93223EAF9]' role='measure' type='quantitative' />
+      <column caption='Pop 2014' datatype='real' name='[pop_2014]' role='measure' type='quantitative' />
+      <column caption='Sightings Count' datatype='integer' name='[sightings_count]' role='measure' type='quantitative' />
+      <column caption='Sightings Per 10K' datatype='real' name='[sightings_per_10k]' role='measure' type='quantitative' />
+      <column caption='State' datatype='string' name='[state]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+      <column caption='State Long' datatype='string' name='[state_long]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='state_totals.csv' id='state_totals.csv_CE9AB6AA718B47BC9F88FBF93223EAF9'>
+            <properties context=''>
+              <relation connection='textscan.1li71l10wrvzr612tnvx6065bp61' name='state_totals.csv' table='[state_totals#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='string' name='state' ordinal='0' />
+                  <column datatype='integer' name='sightings_count' ordinal='1' />
+                  <column datatype='string' name='state_long' ordinal='2' />
+                  <column datatype='real' name='pop_2014' ordinal='3' />
+                  <column datatype='real' name='sightings_per_10k' ordinal='4' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+    <datasource caption='ufo_bf_state_totals' inline='true' name='federated.0vb414s0eqdzd7144i88g0vyzx6n' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='ufo_bf_state_totals' name='textscan.1aul7oq1kixuy81ctq3i219i016b'>
+            <connection class='textscan' directory='C:/Users/12039/Documents/UFO_sightings' filename='ufo_bf_state_totals.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.1aul7oq1kixuy81ctq3i219i016b' name='ufo_bf_state_totals.csv' table='[ufo_bf_state_totals#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='string' name='state' ordinal='0' />
+            <column datatype='integer' name='sightings_count' ordinal='1' />
+            <column datatype='string' name='state_long' ordinal='2' />
+            <column datatype='real' name='pop_2014' ordinal='3' />
+            <column datatype='real' name='sightings_per_10k' ordinal='4' />
+            <column datatype='real' name='count' ordinal='5' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.1aul7oq1kixuy81ctq3i219i016b' name='ufo_bf_state_totals.csv' table='[ufo_bf_state_totals#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='string' name='state' ordinal='0' />
+            <column datatype='integer' name='sightings_count' ordinal='1' />
+            <column datatype='string' name='state_long' ordinal='2' />
+            <column datatype='real' name='pop_2014' ordinal='3' />
+            <column datatype='real' name='sightings_per_10k' ordinal='4' />
+            <column datatype='real' name='count' ordinal='5' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[ufo_bf_state_totals.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>state</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[state]</local-name>
+            <parent-name>[ufo_bf_state_totals.csv]</parent-name>
+            <remote-alias>state</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ufo_bf_state_totals.csv_8AA752CF805544E0BB5A453F3020A26A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>sightings_count</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[sightings_count]</local-name>
+            <parent-name>[ufo_bf_state_totals.csv]</parent-name>
+            <remote-alias>sightings_count</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ufo_bf_state_totals.csv_8AA752CF805544E0BB5A453F3020A26A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>state_long</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[state_long]</local-name>
+            <parent-name>[ufo_bf_state_totals.csv]</parent-name>
+            <remote-alias>state_long</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ufo_bf_state_totals.csv_8AA752CF805544E0BB5A453F3020A26A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>pop_2014</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[pop_2014]</local-name>
+            <parent-name>[ufo_bf_state_totals.csv]</parent-name>
+            <remote-alias>pop_2014</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ufo_bf_state_totals.csv_8AA752CF805544E0BB5A453F3020A26A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>sightings_per_10k</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[sightings_per_10k]</local-name>
+            <parent-name>[ufo_bf_state_totals.csv]</parent-name>
+            <remote-alias>sightings_per_10k</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ufo_bf_state_totals.csv_8AA752CF805544E0BB5A453F3020A26A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>count</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[count]</local-name>
+            <parent-name>[ufo_bf_state_totals.csv]</parent-name>
+            <remote-alias>count</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ufo_bf_state_totals.csv_8AA752CF805544E0BB5A453F3020A26A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='BF Sightings Per 100k' datatype='real' name='[Calculation_4005388951353028611]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='SUM([count])/SUM([pop_2014]) * 100000' />
+      </column>
+      <column caption='UFO Sightings Per 100k' datatype='real' name='[Calculation_4005388951353438212]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='SUM([sightings_count])/SUM([pop_2014]) * 100000' />
+      </column>
+      <_.fcp.ObjectModelTableType.true...column caption='ufo_bf_state_totals.csv' datatype='table' name='[__tableau_internal_object_id__].[ufo_bf_state_totals.csv_8AA752CF805544E0BB5A453F3020A26A]' role='measure' type='quantitative' />
+      <column caption='Bigfoot Sightings Count' datatype='real' name='[count]' role='measure' type='quantitative' />
+      <column caption='Pop 2014' datatype='real' name='[pop_2014]' role='measure' type='quantitative' />
+      <column caption='UFO Sightings Count' datatype='integer' name='[sightings_count]' role='measure' type='quantitative' />
+      <column caption='Sightings Per 10K' datatype='real' name='[sightings_per_10k]' role='measure' type='quantitative' />
+      <column caption='State' datatype='string' name='[state]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+      <column caption='State Long' datatype='string' name='[state_long]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='ufo_bf_state_totals.csv' id='ufo_bf_state_totals.csv_8AA752CF805544E0BB5A453F3020A26A'>
+            <properties context=''>
+              <relation connection='textscan.1aul7oq1kixuy81ctq3i219i016b' name='ufo_bf_state_totals.csv' table='[ufo_bf_state_totals#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='string' name='state' ordinal='0' />
+                  <column datatype='integer' name='sightings_count' ordinal='1' />
+                  <column datatype='string' name='state_long' ordinal='2' />
+                  <column datatype='real' name='pop_2014' ordinal='3' />
+                  <column datatype='real' name='sightings_per_10k' ordinal='4' />
+                  <column datatype='real' name='count' ordinal='5' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+    <datasource caption='bigfoot_sightings' inline='true' name='federated.1k5sb7o1hq707b1e0dsxg1mtordc' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='bigfoot_sightings' name='textscan.1cvj3j81xicb0411augie0mnsf73'>
+            <connection class='textscan' directory='C:/Users/12039/Documents/UFO_sightings' filename='bigfoot_sightings.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.1cvj3j81xicb0411augie0mnsf73' name='bigfoot_sightings.csv' table='[bigfoot_sightings#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='string' name='observed' ordinal='0' />
+            <column datatype='string' name='location_details' ordinal='1' />
+            <column datatype='string' name='county' ordinal='2' />
+            <column datatype='string' name='state' ordinal='3' />
+            <column datatype='string' name='season' ordinal='4' />
+            <column datatype='string' name='title' ordinal='5' />
+            <column datatype='real' name='latitude' ordinal='6' />
+            <column datatype='real' name='longitude' ordinal='7' />
+            <column datatype='date' name='date' ordinal='8' />
+            <column datatype='real' name='number' ordinal='9' />
+            <column datatype='string' name='classification' ordinal='10' />
+            <column datatype='string' name='geohash' ordinal='11' />
+            <column datatype='real' name='temperature_high' ordinal='12' />
+            <column datatype='real' name='temperature_mid' ordinal='13' />
+            <column datatype='real' name='temperature_low' ordinal='14' />
+            <column datatype='real' name='dew_point' ordinal='15' />
+            <column datatype='real' name='humidity' ordinal='16' />
+            <column datatype='real' name='cloud_cover' ordinal='17' />
+            <column datatype='real' name='moon_phase' ordinal='18' />
+            <column datatype='real' name='precip_intensity' ordinal='19' />
+            <column datatype='real' name='precip_probability' ordinal='20' />
+            <column datatype='string' name='precip_type' ordinal='21' />
+            <column datatype='real' name='pressure' ordinal='22' />
+            <column datatype='string' name='summary' ordinal='23' />
+            <column datatype='string' name='conditions' ordinal='24' />
+            <column datatype='real' name='uv_index' ordinal='25' />
+            <column datatype='real' name='visibility' ordinal='26' />
+            <column datatype='real' name='wind_bearing' ordinal='27' />
+            <column datatype='real' name='wind_speed' ordinal='28' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.1cvj3j81xicb0411augie0mnsf73' name='bigfoot_sightings.csv' table='[bigfoot_sightings#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='string' name='observed' ordinal='0' />
+            <column datatype='string' name='location_details' ordinal='1' />
+            <column datatype='string' name='county' ordinal='2' />
+            <column datatype='string' name='state' ordinal='3' />
+            <column datatype='string' name='season' ordinal='4' />
+            <column datatype='string' name='title' ordinal='5' />
+            <column datatype='real' name='latitude' ordinal='6' />
+            <column datatype='real' name='longitude' ordinal='7' />
+            <column datatype='date' name='date' ordinal='8' />
+            <column datatype='real' name='number' ordinal='9' />
+            <column datatype='string' name='classification' ordinal='10' />
+            <column datatype='string' name='geohash' ordinal='11' />
+            <column datatype='real' name='temperature_high' ordinal='12' />
+            <column datatype='real' name='temperature_mid' ordinal='13' />
+            <column datatype='real' name='temperature_low' ordinal='14' />
+            <column datatype='real' name='dew_point' ordinal='15' />
+            <column datatype='real' name='humidity' ordinal='16' />
+            <column datatype='real' name='cloud_cover' ordinal='17' />
+            <column datatype='real' name='moon_phase' ordinal='18' />
+            <column datatype='real' name='precip_intensity' ordinal='19' />
+            <column datatype='real' name='precip_probability' ordinal='20' />
+            <column datatype='string' name='precip_type' ordinal='21' />
+            <column datatype='real' name='pressure' ordinal='22' />
+            <column datatype='string' name='summary' ordinal='23' />
+            <column datatype='string' name='conditions' ordinal='24' />
+            <column datatype='real' name='uv_index' ordinal='25' />
+            <column datatype='real' name='visibility' ordinal='26' />
+            <column datatype='real' name='wind_bearing' ordinal='27' />
+            <column datatype='real' name='wind_speed' ordinal='28' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[bigfoot_sightings.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>observed</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[observed]</local-name>
+            <parent-name>[bigfoot_sightings.csv]</parent-name>
+            <remote-alias>observed</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[bigfoot_sightings.csv_A0D612F8292244F688E8C5AB71C8F181]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>location_details</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[location_details]</local-name>
+            <parent-name>[bigfoot_sightings.csv]</parent-name>
+            <remote-alias>location_details</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[bigfoot_sightings.csv_A0D612F8292244F688E8C5AB71C8F181]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>county</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[county]</local-name>
+            <parent-name>[bigfoot_sightings.csv]</parent-name>
+            <remote-alias>county</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[bigfoot_sightings.csv_A0D612F8292244F688E8C5AB71C8F181]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>state</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[state]</local-name>
+            <parent-name>[bigfoot_sightings.csv]</parent-name>
+            <remote-alias>state</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[bigfoot_sightings.csv_A0D612F8292244F688E8C5AB71C8F181]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>season</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[season]</local-name>
+            <parent-name>[bigfoot_sightings.csv]</parent-name>
+            <remote-alias>season</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[bigfoot_sightings.csv_A0D612F8292244F688E8C5AB71C8F181]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>title</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[title]</local-name>
+            <parent-name>[bigfoot_sightings.csv]</parent-name>
+            <remote-alias>title</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[bigfoot_sightings.csv_A0D612F8292244F688E8C5AB71C8F181]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>latitude</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[latitude]</local-name>
+            <parent-name>[bigfoot_sightings.csv]</parent-name>
+            <remote-alias>latitude</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[bigfoot_sightings.csv_A0D612F8292244F688E8C5AB71C8F181]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>longitude</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[longitude]</local-name>
+            <parent-name>[bigfoot_sightings.csv]</parent-name>
+            <remote-alias>longitude</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[bigfoot_sightings.csv_A0D612F8292244F688E8C5AB71C8F181]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>date</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[date]</local-name>
+            <parent-name>[bigfoot_sightings.csv]</parent-name>
+            <remote-alias>date</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[bigfoot_sightings.csv_A0D612F8292244F688E8C5AB71C8F181]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>number</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[number]</local-name>
+            <parent-name>[bigfoot_sightings.csv]</parent-name>
+            <remote-alias>number</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[bigfoot_sightings.csv_A0D612F8292244F688E8C5AB71C8F181]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>classification</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[classification]</local-name>
+            <parent-name>[bigfoot_sightings.csv]</parent-name>
+            <remote-alias>classification</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[bigfoot_sightings.csv_A0D612F8292244F688E8C5AB71C8F181]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>geohash</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[geohash]</local-name>
+            <parent-name>[bigfoot_sightings.csv]</parent-name>
+            <remote-alias>geohash</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[bigfoot_sightings.csv_A0D612F8292244F688E8C5AB71C8F181]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>temperature_high</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[temperature_high]</local-name>
+            <parent-name>[bigfoot_sightings.csv]</parent-name>
+            <remote-alias>temperature_high</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[bigfoot_sightings.csv_A0D612F8292244F688E8C5AB71C8F181]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>temperature_mid</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[temperature_mid]</local-name>
+            <parent-name>[bigfoot_sightings.csv]</parent-name>
+            <remote-alias>temperature_mid</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[bigfoot_sightings.csv_A0D612F8292244F688E8C5AB71C8F181]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>temperature_low</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[temperature_low]</local-name>
+            <parent-name>[bigfoot_sightings.csv]</parent-name>
+            <remote-alias>temperature_low</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[bigfoot_sightings.csv_A0D612F8292244F688E8C5AB71C8F181]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>dew_point</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[dew_point]</local-name>
+            <parent-name>[bigfoot_sightings.csv]</parent-name>
+            <remote-alias>dew_point</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[bigfoot_sightings.csv_A0D612F8292244F688E8C5AB71C8F181]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>humidity</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[humidity]</local-name>
+            <parent-name>[bigfoot_sightings.csv]</parent-name>
+            <remote-alias>humidity</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[bigfoot_sightings.csv_A0D612F8292244F688E8C5AB71C8F181]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>cloud_cover</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[cloud_cover]</local-name>
+            <parent-name>[bigfoot_sightings.csv]</parent-name>
+            <remote-alias>cloud_cover</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[bigfoot_sightings.csv_A0D612F8292244F688E8C5AB71C8F181]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>moon_phase</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[moon_phase]</local-name>
+            <parent-name>[bigfoot_sightings.csv]</parent-name>
+            <remote-alias>moon_phase</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[bigfoot_sightings.csv_A0D612F8292244F688E8C5AB71C8F181]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>precip_intensity</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[precip_intensity]</local-name>
+            <parent-name>[bigfoot_sightings.csv]</parent-name>
+            <remote-alias>precip_intensity</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[bigfoot_sightings.csv_A0D612F8292244F688E8C5AB71C8F181]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>precip_probability</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[precip_probability]</local-name>
+            <parent-name>[bigfoot_sightings.csv]</parent-name>
+            <remote-alias>precip_probability</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[bigfoot_sightings.csv_A0D612F8292244F688E8C5AB71C8F181]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>precip_type</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[precip_type]</local-name>
+            <parent-name>[bigfoot_sightings.csv]</parent-name>
+            <remote-alias>precip_type</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[bigfoot_sightings.csv_A0D612F8292244F688E8C5AB71C8F181]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>pressure</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[pressure]</local-name>
+            <parent-name>[bigfoot_sightings.csv]</parent-name>
+            <remote-alias>pressure</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[bigfoot_sightings.csv_A0D612F8292244F688E8C5AB71C8F181]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>summary</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[summary]</local-name>
+            <parent-name>[bigfoot_sightings.csv]</parent-name>
+            <remote-alias>summary</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[bigfoot_sightings.csv_A0D612F8292244F688E8C5AB71C8F181]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>conditions</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[conditions]</local-name>
+            <parent-name>[bigfoot_sightings.csv]</parent-name>
+            <remote-alias>conditions</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[bigfoot_sightings.csv_A0D612F8292244F688E8C5AB71C8F181]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>uv_index</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[uv_index]</local-name>
+            <parent-name>[bigfoot_sightings.csv]</parent-name>
+            <remote-alias>uv_index</remote-alias>
+            <ordinal>25</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[bigfoot_sightings.csv_A0D612F8292244F688E8C5AB71C8F181]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>visibility</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[visibility]</local-name>
+            <parent-name>[bigfoot_sightings.csv]</parent-name>
+            <remote-alias>visibility</remote-alias>
+            <ordinal>26</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[bigfoot_sightings.csv_A0D612F8292244F688E8C5AB71C8F181]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>wind_bearing</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[wind_bearing]</local-name>
+            <parent-name>[bigfoot_sightings.csv]</parent-name>
+            <remote-alias>wind_bearing</remote-alias>
+            <ordinal>27</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[bigfoot_sightings.csv_A0D612F8292244F688E8C5AB71C8F181]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>wind_speed</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[wind_speed]</local-name>
+            <parent-name>[bigfoot_sightings.csv]</parent-name>
+            <remote-alias>wind_speed</remote-alias>
+            <ordinal>28</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[bigfoot_sightings.csv_A0D612F8292244F688E8C5AB71C8F181]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <_.fcp.ObjectModelTableType.true...column caption='bigfoot_sightings.csv' datatype='table' name='[__tableau_internal_object_id__].[bigfoot_sightings.csv_A0D612F8292244F688E8C5AB71C8F181]' role='measure' type='quantitative' />
+      <column caption='Classification' datatype='string' name='[classification]' role='dimension' type='nominal' />
+      <column caption='Cloud Cover' datatype='real' name='[cloud_cover]' role='measure' type='quantitative' />
+      <column caption='Conditions' datatype='string' name='[conditions]' role='dimension' type='nominal' />
+      <column caption='County' datatype='string' name='[county]' role='dimension' semantic-role='[County].[Name]' type='nominal' />
+      <column caption='Date' datatype='date' name='[date]' role='dimension' type='ordinal' />
+      <column caption='Dew Point' datatype='real' name='[dew_point]' role='measure' type='quantitative' />
+      <column caption='Geohash' datatype='string' name='[geohash]' role='dimension' type='nominal' />
+      <column caption='Humidity' datatype='real' name='[humidity]' role='measure' type='quantitative' />
+      <column aggregation='Avg' caption='Latitude' datatype='real' name='[latitude]' role='measure' semantic-role='[Geographical].[Latitude]' type='quantitative' />
+      <column caption='Location Details' datatype='string' name='[location_details]' role='dimension' type='nominal' />
+      <column aggregation='Avg' caption='Longitude' datatype='real' name='[longitude]' role='measure' semantic-role='[Geographical].[Longitude]' type='quantitative' />
+      <column caption='Moon Phase' datatype='real' name='[moon_phase]' role='measure' type='quantitative' />
+      <column caption='Number' datatype='real' name='[number]' role='dimension' type='ordinal' />
+      <column caption='Observed' datatype='string' name='[observed]' role='dimension' type='nominal' />
+      <column caption='Precip Intensity' datatype='real' name='[precip_intensity]' role='measure' type='quantitative' />
+      <column caption='Precip Probability' datatype='real' name='[precip_probability]' role='measure' type='quantitative' />
+      <column caption='Precip Type' datatype='string' name='[precip_type]' role='dimension' type='nominal' />
+      <column caption='Pressure' datatype='real' name='[pressure]' role='measure' type='quantitative' />
+      <column caption='Season' datatype='string' name='[season]' role='dimension' type='nominal' />
+      <column caption='State' datatype='string' name='[state]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+      <column caption='Summary' datatype='string' name='[summary]' role='dimension' type='nominal' />
+      <column caption='Temperature High' datatype='real' name='[temperature_high]' role='measure' type='quantitative' />
+      <column caption='Temperature Low' datatype='real' name='[temperature_low]' role='measure' type='quantitative' />
+      <column caption='Temperature Mid' datatype='real' name='[temperature_mid]' role='measure' type='quantitative' />
+      <column caption='Title' datatype='string' name='[title]' role='dimension' type='nominal' />
+      <column caption='Uv Index' datatype='real' name='[uv_index]' role='measure' type='quantitative' />
+      <column caption='Visibility' datatype='real' name='[visibility]' role='measure' type='quantitative' />
+      <column caption='Wind Bearing' datatype='real' name='[wind_bearing]' role='measure' type='quantitative' />
+      <column caption='Wind Speed' datatype='real' name='[wind_speed]' role='measure' type='quantitative' />
+      <drill-paths>
+        <drill-path name='state, county'>
+          <field>[state]</field>
+          <field>[county]</field>
+        </drill-path>
+      </drill-paths>
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='bigfoot_sightings.csv' id='bigfoot_sightings.csv_A0D612F8292244F688E8C5AB71C8F181'>
+            <properties context=''>
+              <relation connection='textscan.1cvj3j81xicb0411augie0mnsf73' name='bigfoot_sightings.csv' table='[bigfoot_sightings#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='string' name='observed' ordinal='0' />
+                  <column datatype='string' name='location_details' ordinal='1' />
+                  <column datatype='string' name='county' ordinal='2' />
+                  <column datatype='string' name='state' ordinal='3' />
+                  <column datatype='string' name='season' ordinal='4' />
+                  <column datatype='string' name='title' ordinal='5' />
+                  <column datatype='real' name='latitude' ordinal='6' />
+                  <column datatype='real' name='longitude' ordinal='7' />
+                  <column datatype='date' name='date' ordinal='8' />
+                  <column datatype='real' name='number' ordinal='9' />
+                  <column datatype='string' name='classification' ordinal='10' />
+                  <column datatype='string' name='geohash' ordinal='11' />
+                  <column datatype='real' name='temperature_high' ordinal='12' />
+                  <column datatype='real' name='temperature_mid' ordinal='13' />
+                  <column datatype='real' name='temperature_low' ordinal='14' />
+                  <column datatype='real' name='dew_point' ordinal='15' />
+                  <column datatype='real' name='humidity' ordinal='16' />
+                  <column datatype='real' name='cloud_cover' ordinal='17' />
+                  <column datatype='real' name='moon_phase' ordinal='18' />
+                  <column datatype='real' name='precip_intensity' ordinal='19' />
+                  <column datatype='real' name='precip_probability' ordinal='20' />
+                  <column datatype='string' name='precip_type' ordinal='21' />
+                  <column datatype='real' name='pressure' ordinal='22' />
+                  <column datatype='string' name='summary' ordinal='23' />
+                  <column datatype='string' name='conditions' ordinal='24' />
+                  <column datatype='real' name='uv_index' ordinal='25' />
+                  <column datatype='real' name='visibility' ordinal='26' />
+                  <column datatype='real' name='wind_bearing' ordinal='27' />
+                  <column datatype='real' name='wind_speed' ordinal='28' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+    <datasource caption='population_by_state' inline='true' name='federated.03q3txt0mf2fkz1bhfbxg0g3lurh' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='population_by_state' name='textscan.1y0wmkd0lu2sd11ct8udi0dv87q5'>
+            <connection class='textscan' directory='C:/Users/12039/Documents/UFO_sightings' filename='population_by_state.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.1y0wmkd0lu2sd11ct8udi0dv87q5' name='population_by_state.csv' table='[population_by_state#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='SUMLEV' ordinal='0' />
+            <column datatype='integer' name='REGION' ordinal='1' />
+            <column datatype='integer' name='DIVISION' ordinal='2' />
+            <column datatype='integer' name='STATE' ordinal='3' />
+            <column datatype='string' name='NAME' ordinal='4' />
+            <column datatype='integer' name='POPESTIMATE2014' ordinal='5' />
+            <column datatype='integer' name='POPEST18PLUS2014' ordinal='6' />
+            <column datatype='real' name='PCNT_POPEST18PLUS' ordinal='7' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.1y0wmkd0lu2sd11ct8udi0dv87q5' name='population_by_state.csv' table='[population_by_state#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='SUMLEV' ordinal='0' />
+            <column datatype='integer' name='REGION' ordinal='1' />
+            <column datatype='integer' name='DIVISION' ordinal='2' />
+            <column datatype='integer' name='STATE' ordinal='3' />
+            <column datatype='string' name='NAME' ordinal='4' />
+            <column datatype='integer' name='POPESTIMATE2014' ordinal='5' />
+            <column datatype='integer' name='POPEST18PLUS2014' ordinal='6' />
+            <column datatype='real' name='PCNT_POPEST18PLUS' ordinal='7' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[population_by_state.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>SUMLEV</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[SUMLEV]</local-name>
+            <parent-name>[population_by_state.csv]</parent-name>
+            <remote-alias>SUMLEV</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[population_by_state.csv_0D61F88F23A14DB7B2EABC7294BBB8E2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>REGION</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[REGION]</local-name>
+            <parent-name>[population_by_state.csv]</parent-name>
+            <remote-alias>REGION</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[population_by_state.csv_0D61F88F23A14DB7B2EABC7294BBB8E2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>DIVISION</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[DIVISION]</local-name>
+            <parent-name>[population_by_state.csv]</parent-name>
+            <remote-alias>DIVISION</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[population_by_state.csv_0D61F88F23A14DB7B2EABC7294BBB8E2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>STATE</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[STATE]</local-name>
+            <parent-name>[population_by_state.csv]</parent-name>
+            <remote-alias>STATE</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[population_by_state.csv_0D61F88F23A14DB7B2EABC7294BBB8E2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>NAME</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[NAME]</local-name>
+            <parent-name>[population_by_state.csv]</parent-name>
+            <remote-alias>NAME</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[population_by_state.csv_0D61F88F23A14DB7B2EABC7294BBB8E2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>POPESTIMATE2014</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[POPESTIMATE2014]</local-name>
+            <parent-name>[population_by_state.csv]</parent-name>
+            <remote-alias>POPESTIMATE2014</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[population_by_state.csv_0D61F88F23A14DB7B2EABC7294BBB8E2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>POPEST18PLUS2014</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[POPEST18PLUS2014]</local-name>
+            <parent-name>[population_by_state.csv]</parent-name>
+            <remote-alias>POPEST18PLUS2014</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[population_by_state.csv_0D61F88F23A14DB7B2EABC7294BBB8E2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PCNT_POPEST18PLUS</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[PCNT_POPEST18PLUS]</local-name>
+            <parent-name>[population_by_state.csv]</parent-name>
+            <remote-alias>PCNT_POPEST18PLUS</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[population_by_state.csv_0D61F88F23A14DB7B2EABC7294BBB8E2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Division' datatype='integer' name='[DIVISION]' role='measure' type='quantitative' />
+      <column caption='Name' datatype='string' name='[NAME]' role='dimension' type='nominal' />
+      <column caption='Pcnt Popest18Plus' datatype='real' name='[PCNT_POPEST18PLUS]' role='measure' type='quantitative' />
+      <column caption='Popest18Plus2014' datatype='integer' name='[POPEST18PLUS2014]' role='measure' type='quantitative' />
+      <column caption='Popestimate2014' datatype='integer' name='[POPESTIMATE2014]' role='measure' type='quantitative' />
+      <column caption='Region' datatype='integer' name='[REGION]' role='measure' type='quantitative' />
+      <column aggregation='Sum' caption='State' datatype='integer' name='[STATE]' role='dimension' semantic-role='[State].[Name]' type='ordinal' />
+      <column caption='Sumlev' datatype='integer' name='[SUMLEV]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='population_by_state.csv' datatype='table' name='[__tableau_internal_object_id__].[population_by_state.csv_0D61F88F23A14DB7B2EABC7294BBB8E2]' role='measure' type='quantitative' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='population_by_state.csv' id='population_by_state.csv_0D61F88F23A14DB7B2EABC7294BBB8E2'>
+            <properties context=''>
+              <relation connection='textscan.1y0wmkd0lu2sd11ct8udi0dv87q5' name='population_by_state.csv' table='[population_by_state#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='integer' name='SUMLEV' ordinal='0' />
+                  <column datatype='integer' name='REGION' ordinal='1' />
+                  <column datatype='integer' name='DIVISION' ordinal='2' />
+                  <column datatype='integer' name='STATE' ordinal='3' />
+                  <column datatype='string' name='NAME' ordinal='4' />
+                  <column datatype='integer' name='POPESTIMATE2014' ordinal='5' />
+                  <column datatype='integer' name='POPEST18PLUS2014' ordinal='6' />
+                  <column datatype='real' name='PCNT_POPEST18PLUS' ordinal='7' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <mapsources>
+    <mapsource name='Tableau' />
+  </mapsources>
+  <worksheets>
+    <worksheet name='Map of UFO sightings'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='ufo_data_cleaned' name='federated.0fxiix508btv8q18lqtu80wznmtz' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.0fxiix508btv8q18lqtu80wznmtz'>
+            <column caption='Popestimate2014' datatype='real' name='[POPESTIMATE2014]' role='measure' type='quantitative' />
+            <column caption='State' datatype='string' name='[STATE]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+            <column-instance column='[latitude]' derivation='Avg' name='[avg:latitude:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[POPESTIMATE2014]' derivation='Count' name='[cnt:POPESTIMATE2014:qk]' pivot='key' type='quantitative' />
+            <column caption='Country' datatype='string' name='[country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column aggregation='Avg' caption='Latitude' datatype='real' name='[latitude]' role='measure' semantic-role='[Geographical].[Latitude]' type='quantitative' />
+            <column-instance column='[STATE]' derivation='None' name='[none:STATE:nk]' pivot='key' type='nominal' />
+            <column-instance column='[country]' derivation='None' name='[none:country:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0fxiix508btv8q18lqtu80wznmtz].[none:country:nk]'>
+            <groupfilter function='member' level='[none:country:nk]' member='&quot;us&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.0fxiix508btv8q18lqtu80wznmtz].[none:country:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Multipolygon' />
+            <encodings>
+              <color column='[federated.0fxiix508btv8q18lqtu80wznmtz].[cnt:POPESTIMATE2014:qk]' />
+              <lod column='[federated.0fxiix508btv8q18lqtu80wznmtz].[none:country:nk]' />
+              <lod column='[federated.0fxiix508btv8q18lqtu80wznmtz].[none:STATE:nk]' />
+              <geometry column='[federated.0fxiix508btv8q18lqtu80wznmtz].[Geometry (generated)]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.0fxiix508btv8q18lqtu80wznmtz].[avg:latitude:qk]</rows>
+        <cols>[federated.0fxiix508btv8q18lqtu80wznmtz].[Longitude (generated)]</cols>
+      </table>
+      <simple-id uuid='{F5BFE7C5-672E-4E7C-BA48-912D7B4B683F}' />
+    </worksheet>
+    <worksheet name='Population Map'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>US Population</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='ufo_bf_state_totals' name='federated.0vb414s0eqdzd7144i88g0vyzx6n' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.0vb414s0eqdzd7144i88g0vyzx6n'>
+            <column-instance column='[state]' derivation='None' name='[none:state:nk]' pivot='key' type='nominal' />
+            <column caption='Pop 2014' datatype='real' name='[pop_2014]' role='measure' type='quantitative' />
+            <column caption='State' datatype='string' name='[state]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+            <column-instance column='[pop_2014]' derivation='Sum' name='[sum:pop_2014:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.0vb414s0eqdzd7144i88g0vyzx6n].[Longitude (generated)]' field-type='quantitative' max='33453954.074182905' min='24343026.852416947' projection='EPSG:3857' range-type='fixed' scope='cols' type='space' />
+            <encoding attr='space' class='0' field='[federated.0vb414s0eqdzd7144i88g0vyzx6n].[Latitude (generated)]' field-type='quantitative' max='7385222.2502312418' min='2227664.8164881915' projection='EPSG:3857' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.0vb414s0eqdzd7144i88g0vyzx6n].[sum:pop_2014:qk]' palette='purple_10_0' type='interpolated' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Multipolygon' />
+            <encodings>
+              <color column='[federated.0vb414s0eqdzd7144i88g0vyzx6n].[sum:pop_2014:qk]' />
+              <lod column='[federated.0vb414s0eqdzd7144i88g0vyzx6n].[none:state:nk]' />
+              <geometry column='[federated.0vb414s0eqdzd7144i88g0vyzx6n].[Geometry (generated)]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.0vb414s0eqdzd7144i88g0vyzx6n].[Latitude (generated)]</rows>
+        <cols>[federated.0vb414s0eqdzd7144i88g0vyzx6n].[Longitude (generated)]</cols>
+      </table>
+      <simple-id uuid='{14AE6516-B480-465B-92E5-25240024E1EE}' />
+    </worksheet>
+    <worksheet name='Sheet 7'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#59a14f' fontsize='22'>Bigfoot Sightings by Year</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='bigfoot_sightings' name='federated.1k5sb7o1hq707b1e0dsxg1mtordc' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1k5sb7o1hq707b1e0dsxg1mtordc'>
+            <column caption='Cloud Cover' datatype='real' name='[cloud_cover]' role='measure' type='quantitative' />
+            <column-instance column='[cloud_cover]' derivation='Count' name='[cnt:cloud_cover:qk]' pivot='key' type='quantitative' />
+            <column caption='Date' datatype='date' name='[date]' role='dimension' type='ordinal' />
+            <column-instance column='[date]' derivation='Year' name='[yr:date:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.1k5sb7o1hq707b1e0dsxg1mtordc].[cnt:cloud_cover:qk]' scope='rows' value='Bigfoot Sightings' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#59a14f' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1k5sb7o1hq707b1e0dsxg1mtordc].[cnt:cloud_cover:qk]</rows>
+        <cols>[federated.1k5sb7o1hq707b1e0dsxg1mtordc].[yr:date:ok]</cols>
+      </table>
+      <simple-id uuid='{BA53A050-3C34-46FD-8C29-8E5A363CC3FE}' />
+    </worksheet>
+    <worksheet name='Sightings By Year'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#f28e2b' fontsize='22'>UFO Sightings Per Year</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='ufo_data_cleaned' name='federated.0fxiix508btv8q18lqtu80wznmtz' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0fxiix508btv8q18lqtu80wznmtz'>
+            <column-instance column='[duration(minutes)]' derivation='Count' name='[cnt:duration(minutes):qk]' pivot='key' type='quantitative' />
+            <column caption='Datetime' datatype='datetime' name='[datetime]' role='dimension' type='ordinal' />
+            <column caption='Duration(Minutes)' datatype='real' name='[duration(minutes)]' role='measure' type='quantitative' />
+            <column-instance column='[datetime]' derivation='Year' name='[yr:datetime:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.0fxiix508btv8q18lqtu80wznmtz].[cnt:duration(minutes):qk]' scope='rows' value='UFO Sightings' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#f28e2b' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0fxiix508btv8q18lqtu80wznmtz].[cnt:duration(minutes):qk]</rows>
+        <cols>[federated.0fxiix508btv8q18lqtu80wznmtz].[yr:datetime:ok]</cols>
+      </table>
+      <simple-id uuid='{95FA9097-D333-4A7B-9888-92538000DDA4}' />
+    </worksheet>
+    <worksheet name='Sightings By Year - Top States'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='ufo_data_cleaned' name='federated.0fxiix508btv8q18lqtu80wznmtz' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0fxiix508btv8q18lqtu80wznmtz'>
+            <column caption='State' datatype='string' name='[STATE]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+            <column-instance column='[duration(minutes)]' derivation='Count' name='[cnt:duration(minutes):qk]' pivot='key' type='quantitative' />
+            <column caption='Country' datatype='string' name='[country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column caption='Datetime' datatype='datetime' name='[datetime]' role='dimension' type='ordinal' />
+            <column caption='Duration(Minutes)' datatype='real' name='[duration(minutes)]' role='measure' type='quantitative' />
+            <column-instance column='[STATE]' derivation='None' name='[none:STATE:nk]' pivot='key' type='nominal' />
+            <column-instance column='[country]' derivation='None' name='[none:country:nk]' pivot='key' type='nominal' />
+            <column-instance column='[datetime]' derivation='Year' name='[yr:datetime:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0fxiix508btv8q18lqtu80wznmtz].[none:STATE:nk]'>
+            <groupfilter count='5' end='top' function='end' units='records' user:ui-marker='end' user:ui-top-by-field='true'>
+              <groupfilter direction='DESC' expression='COUNT([duration(minutes)])' function='order' user:ui-marker='order'>
+                <groupfilter function='except' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+                  <groupfilter function='level-members' level='[none:STATE:nk]' />
+                  <groupfilter function='union'>
+                    <groupfilter function='member' level='[none:STATE:nk]' member='%null%' />
+                    <groupfilter function='member' level='[none:STATE:nk]' member='&quot;District of Columbia&quot;' />
+                    <groupfilter function='member' level='[none:STATE:nk]' member='&quot;Puerto Rico Commonwealth&quot;' />
+                  </groupfilter>
+                </groupfilter>
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.0fxiix508btv8q18lqtu80wznmtz].[none:country:nk]'>
+            <groupfilter function='member' level='[none:country:nk]' member='&quot;us&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.0fxiix508btv8q18lqtu80wznmtz].[none:country:nk]</column>
+            <column>[federated.0fxiix508btv8q18lqtu80wznmtz].[none:STATE:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0fxiix508btv8q18lqtu80wznmtz].[none:STATE:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.0fxiix508btv8q18lqtu80wznmtz].[cnt:duration(minutes):qk]</rows>
+        <cols>[federated.0fxiix508btv8q18lqtu80wznmtz].[yr:datetime:ok]</cols>
+      </table>
+      <simple-id uuid='{B814923B-9482-474C-AE22-6744E1CCC9B6}' />
+    </worksheet>
+    <worksheet name='Sightings Count Map'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontsize='22'>Sightings by State</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='ufo_bf_state_totals' name='federated.0vb414s0eqdzd7144i88g0vyzx6n' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.0vb414s0eqdzd7144i88g0vyzx6n'>
+            <column caption='BF Sightings Per 100k' datatype='real' name='[Calculation_4005388951353028611]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='SUM([count])/SUM([pop_2014]) * 100000' />
+            </column>
+            <column caption='Bigfoot Sightings Count' datatype='real' name='[count]' role='measure' type='quantitative' />
+            <column-instance column='[state]' derivation='None' name='[none:state:nk]' pivot='key' type='nominal' />
+            <column caption='Pop 2014' datatype='real' name='[pop_2014]' role='measure' type='quantitative' />
+            <column caption='UFO Sightings Count' datatype='integer' name='[sightings_count]' role='measure' type='quantitative' />
+            <column caption='State' datatype='string' name='[state]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+            <column-instance column='[count]' derivation='Sum' name='[sum:count:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[sightings_count]' derivation='Sum' name='[sum:sightings_count:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_4005388951353028611]' derivation='User' name='[usr:Calculation_4005388951353028611:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.0vb414s0eqdzd7144i88g0vyzx6n].[Longitude (generated)]' field-type='quantitative' max='32902252.315964006' min='25520542.778983969' projection='EPSG:3857' range-type='fixed' scope='cols' type='space' />
+            <encoding attr='space' class='0' field='[federated.0vb414s0eqdzd7144i88g0vyzx6n].[Latitude (generated)]' field-type='quantitative' max='9485800.1885569133' min='1150896.6157618442' projection='EPSG:3857' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.0vb414s0eqdzd7144i88g0vyzx6n].[sum:sightings_count:qk]' palette='orange_10_0' type='interpolated' />
+            <encoding attr='color' field='[federated.0vb414s0eqdzd7144i88g0vyzx6n].[sum:count:qk]' palette='green_10_0' type='interpolated' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Multipolygon' />
+            <encodings>
+              <lod column='[federated.0vb414s0eqdzd7144i88g0vyzx6n].[none:state:nk]' />
+            </encodings>
+          </pane>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow' x-axis-name='[federated.0vb414s0eqdzd7144i88g0vyzx6n].[Longitude (generated)]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Multipolygon' />
+            <encodings>
+              <color column='[federated.0vb414s0eqdzd7144i88g0vyzx6n].[sum:sightings_count:qk]' />
+              <lod column='[federated.0vb414s0eqdzd7144i88g0vyzx6n].[none:state:nk]' />
+              <geometry column='[federated.0vb414s0eqdzd7144i88g0vyzx6n].[Geometry (generated)]' />
+            </encodings>
+          </pane>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow' x-axis-name='[federated.0vb414s0eqdzd7144i88g0vyzx6n].[Longitude (generated)]' x-index='1'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Multipolygon' />
+            <encodings>
+              <color column='[federated.0vb414s0eqdzd7144i88g0vyzx6n].[sum:count:qk]' />
+              <geometry column='[federated.0vb414s0eqdzd7144i88g0vyzx6n].[Geometry (generated)]' />
+              <lod column='[federated.0vb414s0eqdzd7144i88g0vyzx6n].[none:state:nk]' />
+              <lod column='[federated.0vb414s0eqdzd7144i88g0vyzx6n].[usr:Calculation_4005388951353028611:qk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.0vb414s0eqdzd7144i88g0vyzx6n].[Latitude (generated)]</rows>
+        <cols>([federated.0vb414s0eqdzd7144i88g0vyzx6n].[Longitude (generated)] + [federated.0vb414s0eqdzd7144i88g0vyzx6n].[Longitude (generated)])</cols>
+      </table>
+      <simple-id uuid='{FCE6B741-888D-47E2-9F08-4BEC64185340}' />
+    </worksheet>
+    <worksheet name='Sightings Per 100k Map'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontsize='22'>Sightings Per 100K</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='ufo_bf_state_totals' name='federated.0vb414s0eqdzd7144i88g0vyzx6n' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.0vb414s0eqdzd7144i88g0vyzx6n'>
+            <column caption='BF Sightings Per 100k' datatype='real' name='[Calculation_4005388951353028611]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='SUM([count])/SUM([pop_2014]) * 100000' />
+            </column>
+            <column caption='UFO Sightings Per 100k' datatype='real' name='[Calculation_4005388951353438212]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='SUM([sightings_count])/SUM([pop_2014]) * 100000' />
+            </column>
+            <column caption='Bigfoot Sightings Count' datatype='real' name='[count]' role='measure' type='quantitative' />
+            <column-instance column='[state]' derivation='None' name='[none:state:nk]' pivot='key' type='nominal' />
+            <column caption='Pop 2014' datatype='real' name='[pop_2014]' role='measure' type='quantitative' />
+            <column caption='UFO Sightings Count' datatype='integer' name='[sightings_count]' role='measure' type='quantitative' />
+            <column caption='State' datatype='string' name='[state]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+            <column-instance column='[Calculation_4005388951353028611]' derivation='User' name='[usr:Calculation_4005388951353028611:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_4005388951353438212]' derivation='User' name='[usr:Calculation_4005388951353438212:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.0vb414s0eqdzd7144i88g0vyzx6n].[Longitude (generated)]' field-type='quantitative' max='33013088.795498248' min='25631379.2585182' projection='EPSG:3857' range-type='fixed' scope='cols' type='space' />
+            <encoding attr='space' class='0' field='[federated.0vb414s0eqdzd7144i88g0vyzx6n].[Latitude (generated)]' field-type='quantitative' max='9264127.2211953402' min='929223.64840027166' projection='EPSG:3857' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.0vb414s0eqdzd7144i88g0vyzx6n].[usr:Calculation_4005388951353438212:qk]' palette='orange_10_0' type='interpolated' />
+            <encoding attr='color' field='[federated.0vb414s0eqdzd7144i88g0vyzx6n].[usr:Calculation_4005388951353028611:qk]' palette='green_10_0' type='interpolated' />
+          </style-rule>
+          <style-rule element='legend-title-text'>
+            <format attr='color' field='[federated.0vb414s0eqdzd7144i88g0vyzx6n].[usr:Calculation_4005388951353028611:qk]' value='Big Foot Sightings Per 100k'>
+              <formatted-text>
+                <run>Big Foot Sightings Per 100k</run>
+              </formatted-text>
+            </format>
+            <format attr='color' field='[federated.0vb414s0eqdzd7144i88g0vyzx6n].[usr:Calculation_4005388951353438212:qk]' value='UFO Sightings Per 100k'>
+              <formatted-text>
+                <run>UFO Sightings Per 100k</run>
+              </formatted-text>
+            </format>
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Multipolygon' />
+            <encodings>
+              <lod column='[federated.0vb414s0eqdzd7144i88g0vyzx6n].[none:state:nk]' />
+            </encodings>
+          </pane>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow' x-axis-name='[federated.0vb414s0eqdzd7144i88g0vyzx6n].[Longitude (generated)]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Multipolygon' />
+            <encodings>
+              <color column='[federated.0vb414s0eqdzd7144i88g0vyzx6n].[usr:Calculation_4005388951353438212:qk]' />
+              <lod column='[federated.0vb414s0eqdzd7144i88g0vyzx6n].[none:state:nk]' />
+              <geometry column='[federated.0vb414s0eqdzd7144i88g0vyzx6n].[Geometry (generated)]' />
+            </encodings>
+          </pane>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow' x-axis-name='[federated.0vb414s0eqdzd7144i88g0vyzx6n].[Longitude (generated)]' x-index='1'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Multipolygon' />
+            <encodings>
+              <color column='[federated.0vb414s0eqdzd7144i88g0vyzx6n].[usr:Calculation_4005388951353028611:qk]' />
+              <lod column='[federated.0vb414s0eqdzd7144i88g0vyzx6n].[none:state:nk]' />
+              <lod column='[federated.0vb414s0eqdzd7144i88g0vyzx6n].[usr:Calculation_4005388951353028611:qk]' />
+              <geometry column='[federated.0vb414s0eqdzd7144i88g0vyzx6n].[Geometry (generated)]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.0vb414s0eqdzd7144i88g0vyzx6n].[Latitude (generated)]</rows>
+        <cols>([federated.0vb414s0eqdzd7144i88g0vyzx6n].[Longitude (generated)] + [federated.0vb414s0eqdzd7144i88g0vyzx6n].[Longitude (generated)])</cols>
+      </table>
+      <simple-id uuid='{2598155E-9211-47B9-ADFB-A07DE4B7CCF4}' />
+    </worksheet>
+    <worksheet name='UFO by Shape'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#f28e2b' fontsize='22'>Top 10 UFO Shapes</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='ufo_data_cleaned' name='federated.0fxiix508btv8q18lqtu80wznmtz' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0fxiix508btv8q18lqtu80wznmtz'>
+            <column-instance column='[duration(minutes)]' derivation='Count' name='[cnt:duration(minutes):qk]' pivot='key' type='quantitative' />
+            <column caption='Duration(Minutes)' datatype='real' name='[duration(minutes)]' role='measure' type='quantitative' />
+            <column-instance column='[shape]' derivation='None' name='[none:shape:nk]' pivot='key' type='nominal' />
+            <column caption='Shape' datatype='string' name='[shape]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0fxiix508btv8q18lqtu80wznmtz].[none:shape:nk]'>
+            <groupfilter count='10' end='top' function='end' units='records' user:ui-marker='end' user:ui-top-by-field='true'>
+              <groupfilter direction='DESC' expression='COUNT([duration(minutes)])' function='order' user:ui-marker='order'>
+                <groupfilter function='level-members' level='[none:shape:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <computed-sort column='[federated.0fxiix508btv8q18lqtu80wznmtz].[none:shape:nk]' direction='DESC' using='[federated.0fxiix508btv8q18lqtu80wznmtz].[cnt:duration(minutes):qk]' />
+          <slices>
+            <column>[federated.0fxiix508btv8q18lqtu80wznmtz].[none:shape:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.0fxiix508btv8q18lqtu80wznmtz].[cnt:duration(minutes):qk]' scope='cols' value='Number of Sightings' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='rows' value='false' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#ce7624' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0fxiix508btv8q18lqtu80wznmtz].[none:shape:nk]</rows>
+        <cols>[federated.0fxiix508btv8q18lqtu80wznmtz].[cnt:duration(minutes):qk]</cols>
+      </table>
+      <simple-id uuid='{0A90A381-BBCC-4F09-B61E-4751FF2642E7}' />
+    </worksheet>
+    <worksheet name='Visibility Map'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='bigfoot_sightings' name='federated.1k5sb7o1hq707b1e0dsxg1mtordc' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.1k5sb7o1hq707b1e0dsxg1mtordc'>
+            <column-instance column='[latitude]' derivation='Avg' name='[avg:latitude:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[longitude]' derivation='Avg' name='[avg:longitude:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[visibility]' derivation='Avg' name='[avg:visibility:qk]' pivot='key' type='quantitative' />
+            <column aggregation='Avg' caption='Latitude' datatype='real' name='[latitude]' role='measure' semantic-role='[Geographical].[Latitude]' type='quantitative' />
+            <column aggregation='Avg' caption='Longitude' datatype='real' name='[longitude]' role='measure' semantic-role='[Geographical].[Longitude]' type='quantitative' />
+            <column-instance column='[state]' derivation='None' name='[none:state:nk]' pivot='key' type='nominal' />
+            <column caption='State' datatype='string' name='[state]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+            <column caption='Visibility' datatype='real' name='[visibility]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Multipolygon' />
+            <encodings>
+              <color column='[federated.1k5sb7o1hq707b1e0dsxg1mtordc].[avg:visibility:qk]' />
+              <lod column='[federated.1k5sb7o1hq707b1e0dsxg1mtordc].[none:state:nk]' />
+              <geometry column='[federated.1k5sb7o1hq707b1e0dsxg1mtordc].[Geometry (generated)]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.1k5sb7o1hq707b1e0dsxg1mtordc].[avg:latitude:qk]</rows>
+        <cols>[federated.1k5sb7o1hq707b1e0dsxg1mtordc].[avg:longitude:qk]</cols>
+      </table>
+      <simple-id uuid='{92898D18-4250-44EA-B52D-B5CCD24B2D77}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard _.fcp.AccessibleZoneTabOrder.true...enable-sort-zone-taborder='true' name='Dashboard 3'>
+      <style />
+      <size maxheight='800' maxwidth='1000' minheight='800' minwidth='1000' />
+      <zones>
+        <zone h='80625' id='3' name='UFO by Shape' w='95800' x='1300' y='17625' />
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='2' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='84000' id='1' param='vert' type-v2='layout-flow' w='84000' x='8000' y='8000' />
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{16E225B7-1F10-4848-BAFD-83AAF2198373}' />
+    </dashboard>
+    <dashboard _.fcp.AccessibleZoneTabOrder.true...enable-sort-zone-taborder='true' name='UFO and Bigfoot Sightings'>
+      <style />
+      <size sizing-mode='automatic' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98730' id='16' param='horz' type-v2='layout-flow' w='99318' x='341' y='635'>
+            <zone h='98730' id='7' param='horz' type-v2='layout-flow' w='99318' x='341' y='635'>
+              <zone h='98730' id='5' type-v2='layout-basic' w='99318' x='341' y='635'>
+                <zone h='49365' id='3' name='Sightings Per 100k Map' w='99318' x='341' y='50000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone h='49365' id='14' name='Sightings Count Map' w='99318' x='341' y='635'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+        <zone forceUpdate='true' h='3733' id='10' type-v2='text' w='10004' x='21626' y='1430'>
+          <formatted-text>
+            <run bold='true' fontcolor='#f28e2b' fontsize='36'>UFOs</run>
+          </formatted-text>
+        </zone>
+        <zone forceUpdate='true' h='4607' id='11' type-v2='text' w='11111' x='69562' y='556'>
+          <formatted-text>
+            <run bold='true' fontcolor='#59a14f' fontsize='36'>Bigfoot</run>
+          </formatted-text>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='13' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98000' id='12' param='vert' type-v2='layout-flow' w='98400' x='800' y='1000'>
+                <zone fixed-size='280' h='98000' id='3' is-fixed='true' name='Sightings Per 100k Map' w='98400' x='800' y='1000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone forceUpdate='true' h='3750' id='10' type-v2='text' w='10000' x='16300' y='27750'>
+                  <formatted-text>
+                    <run bold='true' fontcolor='#f28e2b' fontsize='36'>UFOs</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone forceUpdate='true' h='4625' id='11' type-v2='text' w='11100' x='56500' y='27750'>
+                  <formatted-text>
+                    <run bold='true' fontcolor='#59a14f' fontsize='36'>Bigfoot</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{D8F399EB-98F3-48A2-B1CD-F5A3DF4DE846}' />
+    </dashboard>
+    <dashboard _.fcp.AccessibleZoneTabOrder.true...enable-sort-zone-taborder='true' name='UFO by Year'>
+      <style />
+      <size sizing-mode='automatic' />
+      <zones>
+        <zone h='98875' id='3' name='Sightings By Year' w='98400' x='1500' y='250' />
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='5' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98000' id='4' param='vert' type-v2='layout-flow' w='98400' x='800' y='1000'>
+                <zone fixed-size='280' h='98875' id='3' is-fixed='true' name='Sightings By Year' w='98400' x='1500' y='250'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{C60F1077-310A-4016-839D-595AD9FACEAB}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='114'>
+    <window class='worksheet' name='Sightings By Year'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{29810291-150E-4F6A-A68B-5B581BA8ED97}' />
+    </window>
+    <window class='worksheet' name='Sightings By Year - Top States'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0fxiix508btv8q18lqtu80wznmtz].[none:STATE:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{7BA27B94-2149-4F77-A72E-52ECDF8CA8D5}' />
+    </window>
+    <window class='worksheet' name='Map of UFO sightings'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0fxiix508btv8q18lqtu80wznmtz].[cnt:POPESTIMATE2014:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{DF4911CB-B597-4BF5-B9AA-CC233E3896AA}' />
+    </window>
+    <window class='worksheet' maximized='true' name='Sightings Count Map'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='1' param='[federated.0vb414s0eqdzd7144i88g0vyzx6n].[sum:sightings_count:qk]' type='color' />
+            <card pane-specification-id='2' param='[federated.0vb414s0eqdzd7144i88g0vyzx6n].[sum:count:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <default-map-tool-selection tool='1' />
+      </viewpoint>
+      <simple-id uuid='{1838797D-27E7-4E07-8C2E-2F43EA1FFCC0}' />
+    </window>
+    <window class='worksheet' name='Sightings Per 100k Map'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='2' param='[federated.0vb414s0eqdzd7144i88g0vyzx6n].[usr:Calculation_4005388951353028611:qk]' type='color' />
+            <card pane-specification-id='1' param='[federated.0vb414s0eqdzd7144i88g0vyzx6n].[usr:Calculation_4005388951353438212:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <default-map-tool-selection tool='1' />
+      </viewpoint>
+      <simple-id uuid='{03FD273B-32D6-4CE4-B9FD-32EB56C89228}' />
+    </window>
+    <window class='worksheet' name='Population Map'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='1' param='[federated.0vb414s0eqdzd7144i88g0vyzx6n].[sum:pop_2014:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <default-map-tool-selection tool='1' />
+      </viewpoint>
+      <simple-id uuid='{4C4F36AD-2AF7-4EEE-8BDA-AD37CB17522F}' />
+    </window>
+    <window class='dashboard' name='UFO and Bigfoot Sightings'>
+      <viewpoints>
+        <viewpoint name='Sightings Count Map'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Sightings Per 100k Map'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{9F07F3FA-93D1-420B-9C2B-C235E6B71EC1}' />
+    </window>
+    <window class='dashboard' name='UFO by Year'>
+      <viewpoints>
+        <viewpoint name='Sightings By Year'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{06650A32-FE9A-4BEC-BA7A-28498056E33A}' />
+    </window>
+    <window class='worksheet' name='Sheet 7'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{C924F42D-E497-4194-891B-A2A48FAD86A4}' />
+    </window>
+    <window class='worksheet' name='Visibility Map'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1k5sb7o1hq707b1e0dsxg1mtordc].[avg:visibility:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{0C8FC73A-3353-4AD8-817D-F09DC47BD51C}' />
+    </window>
+    <window class='worksheet' name='UFO by Shape'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='bottom'>
+          <strip size='96'>
+            <card type='caption' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{B7B43AFC-90A3-4C02-9EBE-71CC2ABA7E8A}' />
+    </window>
+    <window class='dashboard' name='Dashboard 3'>
+      <viewpoints>
+        <viewpoint name='UFO by Shape'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{294CC057-D3C6-48A4-BAC3-AE5C157B6CA2}' />
+    </window>
+  </windows>
+</workbook>
